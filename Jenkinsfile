@@ -3,12 +3,6 @@ pipeline {
     environment {
        DISABLE_AUTH = 'soubhagya'
     }
-    properties([
-            parameters([
-                    choice(
-                        choices: ['ONE', 'TWO'], 
-                        name: 'PARAMETER_01'
-                    )
     stages {
         stage('Build') { 
             steps {
