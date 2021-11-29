@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'echo "Hello $MY_NAME"'
+                echo "Hello ${env.MY_NAME}"
             }
         }
         stage('Test') { 
