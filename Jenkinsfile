@@ -1,12 +1,12 @@
 pipeline {
-    agent any 
+    agent any
+    environment {
+       DISABLE_AUTH = 'soubhagya'
+    }
     stages {
         stage('Build') { 
             steps {
-                script { 
-                env.Username = soubhagya
-                }
-        echo "The username  is $Username"
+                echo env.DISABLE_AUTH
             }
         }
         stage('Test') { 
