@@ -1,9 +1,10 @@
 pipeline {
-    agent any 
+    agent any
+    env.MY_NAME = 'SOUBHAGYA' 
     stages {
         stage('Build') { 
             steps {
-                echo "build done"
+                echo "Hello $MY_NAME"
             }
         }
         stage('Test') { 
