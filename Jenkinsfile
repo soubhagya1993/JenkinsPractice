@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                echo "Hello $MY_NAME"
+                sh 'echo "Hello $MY_NAME"'
             }
         }
         stage('Test') { 
