@@ -1,10 +1,12 @@
 pipeline {
-    agent any
-    env.MY_NAME = 'SOUBHAGYA' 
+    agent any 
     stages {
         stage('Build') { 
             steps {
-                echo "Hello ${env.MY_NAME}"
+                script { 
+                env.Username = soubhagya
+                }
+        echo "The username  is $Username"
             }
         }
         stage('Test') { 
