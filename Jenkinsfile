@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                echo env.DISABLE_AUTH
+                echo "Hello ${env.DISABLE_AUTH}"
             }
         }
         stage('Test') { 
