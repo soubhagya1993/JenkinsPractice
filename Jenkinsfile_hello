@@ -2,20 +2,15 @@ pipeline{
     agent any
 
     stages{
-        stage(hellloWorld){
-            steps{
-                echo "hello world"
-            }
+        stage(checkoutstage){
+            steps{echo "hello world"}
         }
         stage(BuildStage){
-            steps{
-            echo "This is Build stage"
-            }
+            steps{echo "This is Build stage"}
         }
         stage(DeployStage){
-            steps{
-            echo "This is Deploy stage"
-            }
+            steps{echo "This is Deploy stage"}
+            
         }
     }
 }
