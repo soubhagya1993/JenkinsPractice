@@ -8,10 +8,14 @@ pipeline{
             }
         }
         stage(BuildStage){
+            steps{
             echo "This is Build stage"
+            }
         }
         stage(DeployStage){
+            steps{
             echo "This is Deploy stage"
+            }
         }
     }
 }
